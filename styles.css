@@ -1,0 +1,21 @@
+.icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.icon img {
+  position: absolute;
+}
+
+.icon.person img {
+  top: -19px;
+  left: -71px;
+}
+
+.icon.feather img {
+  top: -60px;
+  left: -20px;
+}
