@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Inline Icon Sprite Example</title>
+<style>
+    h1 { 
+        text-align:center; 
+    }
+    section { 
+        width: 600px; 
+        margin: auto; 
+    }
+    .spriteContainer { 
+        width: 600px; 
+        height: 564px; 
+        position: relative; 
+    }
+    .clip { 
+        position: absolute; 
+        top: 0; 
+        left: 0;
+    }
+    img[alt="icon-1"] { 
+        clip: rect(400px 200px 564px 0px); 
+
+    }
+    .spriteContainerSmallerImage {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        width: 200px; 
+        height: 160px; 
+    }
+</style>
+</head>
+<body data-gr-c-s-loaded="true">
+<section>
+    <h2>Sprite example using an HTML IMG element</h2>
+    <p>This is the entire sprite</p>
+    <div class="spriteContainer">
+        <img src="sprite.png" alt="sprite for demonstration purposes">
+    </div>
+    <p>Clip of one icon 600x564</p>
+    <div class="spriteContainer">
+        <img class="clip" alt="icon-1" src="sprite.png">
+    </div>
+    <p>Clip of one icon with dimensions 200x160</p>
+    <div class="spriteContainerSmallerImage">
+        <img class="clip" alt="icon-1" src="sprite.png">
+    </div>
+</section>
+</body>
+</html>
